@@ -1,0 +1,20 @@
+  <form class="terminal">
+    <header class="terminal__header">
+      <h5 class="terminal__header-title modal-title">{{terminalId}}</h5>
+      <button (click)="close()" type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </header>
+
+    <section class="terminal__content">
+    <span *ngFor="let logEntry of log" class="terminal__content-entry">{{logEntry}}</span>
+    </section>
+    <footer class="terminal__footer">
+      <input
+      type="text"
+      class="terminal__input form-control"
+      #input
+      placeholder=">"
+      (keyup.enter)="onEnter(input.value)">
+    </footer>
+  </form>
