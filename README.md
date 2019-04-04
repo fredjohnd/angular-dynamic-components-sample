@@ -2,6 +2,8 @@
 
 A simple app created to test dynamic creation of angular components.
 
+[Demo here](https://fredjohnd.github.io/angular-dynamic-components-sample/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
 
 ## Dependencies installation
